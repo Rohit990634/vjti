@@ -1,0 +1,598 @@
+<style type="text/css">
+  .tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;margin:0px auto;}
+  .tg td{background-color:#fff;border-bottom-width:1px;border-color:#ccc;border-style:solid;border-top-width:1px;
+    border-width:0px;color:#333;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;
+    word-break:normal;}
+  .tg th{background-color:#f0f0f0;border-bottom-width:1px;border-color:#ccc;border-style:solid;border-top-width:1px;
+    border-width:0px;color:#333;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;
+    padding:10px 5px;word-break:normal;}
+  .tg .tg-buh4{background-color:#f9f9f9;text-align:left;vertical-align:top}
+  .tg .tg-blv0{background-color:#c0c0c0;color:#002b36;font-weight:bold;position:-webkit-sticky;position:sticky;text-align:center;
+    top:-1px;vertical-align:top;will-change:transform}
+  .tg .tg-0lax{text-align:left;vertical-align:top}
+  .tg-sort-header::-moz-selection{background:0 0}
+  .tg-sort-header::selection{background:0 0}.tg-sort-header{cursor:pointer}
+  .tg-sort-header:after{content:'';float:right;margin-top:7px;border-width:0 5px 5px;border-style:solid;
+    border-color:#404040 transparent;visibility:hidden}
+  .tg-sort-header:hover:after{visibility:visible}
+  .tg-sort-asc:after,.tg-sort-asc:hover:after,.tg-sort-desc:after{visibility:visible;opacity:.4}
+  .tg-sort-desc:after{border-bottom:none;border-width:5px 5px 0}@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}
+  
+  *{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    /*background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(uniimage/VJTI.jpg);
+    background-position: center;
+    background-size: cover;*/
+    position: relative;
+    color: whitesmoke;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+nav img{
+    width: 90%;
+}
+
+.head{
+    display: flex;
+}
+
+.head a{
+    text-decoration: none;
+}
+.info{
+    color: black;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    /*border-style: solid;
+    border-color: blue;
+    */
+}
+
+/*.nav-links ul{
+    border-style: solid;
+    border-color: palevioletred;
+}
+*/
+
+.nav-links ul li{
+/*border-style: solid;
+border-color: red;
+*/
+display: inline-block;
+padding: 0 12px 12px 12px;
+position: relative;
+list-style: none;
+}
+
+.nav-links ul li a{
+    /*border-style: solid;
+    border-color: black;
+    */
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.tg-wrap{
+  width: 80%;
+  margin: auto;
+}
+
+  </style>
+
+<nav>
+  <div class="head">
+     <a href="index.html"><img src="uniimage/VJTI_logo.jpg"></a>
+     <a href="https://vjti.ac.in/">
+     <div class="info">
+      <p>
+        VJTI Mumbai<br>
+        Veermata Jijabai Technological Institute</p>
+     </div>
+    </a>
+ </div>
+  <!--<div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="hideMenu()"></i>
+      <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">ALUMNI</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="">CONTACT</a></li>
+      </ul>
+  </div>
+-->
+  <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+
+
+  <div class="tg-wrap"><table id="tg-Fh6uW" class="tg">
+  <thead>
+    <tr>
+      <th class="tg-blv0">Roll No.</th>
+      <th class="tg-blv0">Name of Candidates</th>
+      <th class="tg-blv0">Father's or Guardian's Name &amp; Address</th>
+      <th class="tg-blv0">Age Birth Date</th>
+      <th class="tg-blv0">Previous college or University attended</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="tg-buh4">90416</td>
+      <td class="tg-buh4">Arrier Unnikrishnan Chandrashekhar</td>
+      <td class="tg-buh4">Warrier C.P.RFlat no. 12 New VaishaliCHS, Narsinh Lane. Malad (W).400064</td>
+      <td class="tg-buh4">18-03-1973</td>
+      <td class="tg-buh4">Bhavans College</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90417</td>
+      <td class="tg-0lax">Dholakia Mehul Harshal</td>
+      <td class="tg-0lax">Dholakia H.KPrarabdh, 1st Floor, 15th Road,Khar.400052</td>
+      <td class="tg-0lax">17-12-1972</td>
+      <td class="tg-0lax">Parle College</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90418</td>
+      <td class="tg-buh4">Panchamia Amisha Sharadchandra</td>
+      <td class="tg-buh4">S. C. Panchamia196/5407, Surmaya Pantnagar,Ghatkopar (E).400075</td>
+      <td class="tg-buh4">20-10-1972</td>
+      <td class="tg-buh4">Ruia College</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90419</td>
+      <td class="tg-0lax">Khan Javed M. Atique</td>
+      <td class="tg-0lax">Khan M. A.A.RX-107/11, Station side,Godrej colony, Vikhroli (E).400079</td>
+      <td class="tg-0lax">04-07-1972</td>
+      <td class="tg-0lax">Vaze College</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90420</td>
+      <td class="tg-buh4">Meera Priyadharsani Ganesan</td>
+      <td class="tg-buh4">Ganesan R.1-B, Kamet Anushakti Nagar,400094</td>
+      <td class="tg-buh4">15-10-1972</td>
+      <td class="tg-buh4">Atomic Energy College</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90421</td>
+      <td class="tg-0lax">Changrani Prashant Hotchand</td>
+      <td class="tg-0lax">Changrani H. M66/F, Venus Apt., 17th Flr,Dr. R. G. Thandani Marg, Worli Seaface,400018</td>
+      <td class="tg-0lax">03-03-1972</td>
+      <td class="tg-0lax">Jai Hind College</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90422</td>
+      <td class="tg-buh4">Chhatrpati Nirar Sudhir</td>
+      <td class="tg-buh4">Chattrapati S. C73, Lavina Tagore Rd, Santacruz (W). 400054</td>
+      <td class="tg-buh4">13-02-1972</td>
+      <td class="tg-buh4">Parle College</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90423</td>
+      <td class="tg-0lax">Joshi Leena Subhash</td>
+      <td class="tg-0lax">Joshi S. P203/Jupiter Apts, Devi dayal Rd,Mulund (W). 400080</td>
+      <td class="tg-0lax">20-08-1973</td>
+      <td class="tg-0lax">Vaze College</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90424</td>
+      <td class="tg-buh4">Apte Sanjay Avinash</td>
+      <td class="tg-buh4">A. D. ApteDept of. Elect Engg. IIT Powai400076</td>
+      <td class="tg-buh4">20-10-1972</td>
+      <td class="tg-buh4">B. N. Bandolkar College</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90425</td>
+      <td class="tg-0lax">Bajaj Anilkumar Kashiprasad</td>
+      <td class="tg-0lax">Bajaj K. PParamratan Apt. 4th Flr,Block no.403, Zakeria Rd, S. V. Rd, Malad (W) 400064</td>
+      <td class="tg-0lax">14-07-1972</td>
+      <td class="tg-0lax">K Chellaram College</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90426</td>
+      <td class="tg-buh4">Patil Vrinda Prabhucharan</td>
+      <td class="tg-buh4">Patil P. SC-20, ICICI Apts., P. Balu Marg,Prabhadevei. 400025</td>
+      <td class="tg-buh4">27-10-1972</td>
+      <td class="tg-buh4">Ruparel College</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90427</td>
+      <td class="tg-0lax">Vaid Kushagra Virider K.</td>
+      <td class="tg-0lax">Vaid V. RG2, Roop Darshan 'C',Gulmohar Rd, Juhu-Andheri</td>
+      <td class="tg-0lax">28-01-1972</td>
+      <td class="tg-0lax">Parle College</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90428</td>
+      <td class="tg-buh4">Cadatur Shuba Badrinuthan</td>
+      <td class="tg-buh4">Cadatur B.Flat no.3, Vigyan Scientist CHS, Plot no.123, Sec-17, Vashi,400703</td>
+      <td class="tg-buh4">01-12-1972</td>
+      <td class="tg-buh4">Jai Hind College</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90429</td>
+      <td class="tg-0lax">Sejpal Hiten Chootala</td>
+      <td class="tg-0lax">Sejpal C.CPurandare Colony, Chawan Bldg, Syndigate, Kalyan, 421304</td>
+      <td class="tg-0lax">19-01-1973</td>
+      <td class="tg-0lax">Vaze College</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90430</td>
+      <td class="tg-buh4">Kadam Rajesh Pandurang</td>
+      <td class="tg-buh4">Kadam P. NA/23, Namaskar CHS, Mahakali Caves Rd.,Andheri (E), 400093</td>
+      <td class="tg-buh4">22-03-1973</td>
+      <td class="tg-buh4">Ruparel College</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90431</td>
+      <td class="tg-0lax">Kane Subodh Suresh</td>
+      <td class="tg-0lax">Kane S. BA-7, Jayashree Soc.,Pendse Nagar,Rd No.2, Dombivali (E),421201</td>
+      <td class="tg-0lax">17-08-1972</td>
+      <td class="tg-0lax">Vaze College</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90432</td>
+      <td class="tg-buh4">Hande Nitin Uddhav</td>
+      <td class="tg-buh4">Hande U. YB-21, Jai Jawan CHS., Sec 17,Vashi 400705</td>
+      <td class="tg-buh4">06-12-1972</td>
+      <td class="tg-buh4">Modern College</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90433</td>
+      <td class="tg-0lax">Sarma Krishna M. Subramony</td>
+      <td class="tg-0lax">Sarma S.MType IV/3/14, Telecom Factory,Township. Deonar.400088</td>
+      <td class="tg-0lax">09-08-1973</td>
+      <td class="tg-0lax">Swami Vivekanand College</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90434</td>
+      <td class="tg-buh4">Parmar Harshad Devji</td>
+      <td class="tg-buh4">Parmar D. SNew BMC Bldg, D Block. 4th Floor, Room No.44,Mavji Rathod Rd, Dongri. 40009</td>
+      <td class="tg-buh4">11-04-1973</td>
+      <td class="tg-buh4">Wilson College</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90435</td>
+      <td class="tg-0lax">Yadav Sanjay Sadashiv</td>
+      <td class="tg-0lax">Yadav V. SShivaji Nagar, Postman Bldg,Rabdi II, Flat no. 201, Near Shivsena Office,Thane 400601</td>
+      <td class="tg-0lax">01-02-1973</td>
+      <td class="tg-0lax">Bhavani College</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90436</td>
+      <td class="tg-buh4">Bane Nandan Kamlakan</td>
+      <td class="tg-buh4">Bane K. NAshwin, Block No-4, Jay Prakash Nagar,Goreagon (E), 400063</td>
+      <td class="tg-buh4">09-11-1972</td>
+      <td class="tg-buh4">D.G.Ruparel College</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90437</td>
+      <td class="tg-0lax">Bhekare Jitendra Tukaram</td>
+      <td class="tg-0lax">Bhekare S. TCentral Railway Staff Qtr,MS/RB-I,46, RoomNo.23,2nd Floor, Sion (E), 400022</td>
+      <td class="tg-0lax">24-02-1972</td>
+      <td class="tg-0lax">M.P Jr. Vocational College, Parel</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90438</td>
+      <td class="tg-buh4">Gharwade Laxmikant Rambhau</td>
+      <td class="tg-buh4">Mrs. Gharwade V. R198/7800, Kannamuar Nagar,Vikhroli (E), 400083</td>
+      <td class="tg-buh4">06-09-1973</td>
+      <td class="tg-buh4">K. J. Sowmaiya Jr. College</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90439</td>
+      <td class="tg-0lax">Kokate Markandaya Dattaraya</td>
+      <td class="tg-0lax">Kokate D. KProtective Home, Sion-Trombay Rd,Chembur, 400071</td>
+      <td class="tg-0lax">11-06-1972</td>
+      <td class="tg-0lax">D. G. Ruparel College</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90440</td>
+      <td class="tg-buh4">Rathod Deven Natwarlal</td>
+      <td class="tg-buh4">Left On 11/09/1990</td>
+      <td class="tg-buh4"></td>
+      <td class="tg-buh4"></td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90441</td>
+      <td class="tg-0lax">Ausarmal Shamrao Bhimrao</td>
+      <td class="tg-0lax">Ausarmal B. G1/4, Premier Colony, L.G.E Qutr,LBS Marg, Kurla, 400070</td>
+      <td class="tg-0lax">18-10-1970</td>
+      <td class="tg-0lax">K. J. Sowmaiya college of Science</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90442</td>
+      <td class="tg-buh4">Ms. Babaria Jyotsna Devshi</td>
+      <td class="tg-buh4">Babaria D. R18/9, Shanti Naar, Sane Guruji Marg,Near Sant Gadge Maharaj chowk,400011</td>
+      <td class="tg-buh4">17-07-1973</td>
+      <td class="tg-buh4">M.H.Saboo Siddik Polytechnic</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90443</td>
+      <td class="tg-0lax">Sheth R. C</td>
+      <td class="tg-0lax">Left</td>
+      <td class="tg-0lax"></td>
+      <td class="tg-0lax"></td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90444</td>
+      <td class="tg-buh4">Gujare Prashant Dattu</td>
+      <td class="tg-buh4">Gujare D. S33/2342, Abhunaya Nagar,Kala Chowki, 400033</td>
+      <td class="tg-buh4">20-11-1971</td>
+      <td class="tg-buh4">Elphinstone Tech. High school &amp; Jr. College</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90445</td>
+      <td class="tg-0lax">Vetal Nitin Kisan</td>
+      <td class="tg-0lax">Vetal K. B101/3507, Nehru Nagar,Kurla (E).400024</td>
+      <td class="tg-0lax">19-04-1973</td>
+      <td class="tg-0lax">SIES College of Arts &amp; Science</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90446</td>
+      <td class="tg-buh4">Dongre Pradeep Shivram</td>
+      <td class="tg-buh4">Dongare S. DCentral Railway Qtrs no.H-189,Subhash Chowk, Murbad Rd,Kalyan.421301</td>
+      <td class="tg-buh4">02-09-1972</td>
+      <td class="tg-buh4">Smt. Chandibai Himatmal Mansukhan College, Ullhasnagar 3</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90447</td>
+      <td class="tg-0lax">Pawar Subhash Udaykumar</td>
+      <td class="tg-0lax">Pawar U. RSylvertan, 3rd Flr,M/s. Mohamed Chhotani Rd.,Mahim 400016</td>
+      <td class="tg-0lax">24-09-1971</td>
+      <td class="tg-0lax">K.C. College</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90448</td>
+      <td class="tg-buh4">Patwardhan Girish Chantamani</td>
+      <td class="tg-buh4">Patwardhan V. C1019/2, Datta Niwas ,Near Deep Bunglow, Pune 411016</td>
+      <td class="tg-buh4">05-08-1972</td>
+      <td class="tg-buh4">Modern College Pune 5</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90449</td>
+      <td class="tg-0lax">Kolekar Parag Ashok</td>
+      <td class="tg-0lax">Kolekar A. S4/4, Kaykar Smurti,Arey Rd., Goregaon (W).400062</td>
+      <td class="tg-0lax">16-09-1972</td>
+      <td class="tg-0lax">S.S &amp; L.S Patkar College</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90450</td>
+      <td class="tg-buh4">Malvi Abhijit Ghanshyam</td>
+      <td class="tg-buh4">Malvi G. R2, Gurukripa, Plot no.111,The Ajintha CHS, Nandivali Rd, Dombivali (E).421201</td>
+      <td class="tg-buh4">25-03-1973</td>
+      <td class="tg-buh4">Vaze College</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90451</td>
+      <td class="tg-0lax">Chaughule Rishikesh Dinanath</td>
+      <td class="tg-0lax">Chaughule D. SF-7/14, Jeevan Bima Nagar,Opp Shantiashram Borivali (W),400103</td>
+      <td class="tg-0lax">01-09-1973</td>
+      <td class="tg-0lax">D.G.Ruparel College</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90452</td>
+      <td class="tg-buh4">Kandalgaonkar Girish Ganesh</td>
+      <td class="tg-buh4">Kandalgaonkar G. S30/883, Pant Nagar, Ghatkopar,400075</td>
+      <td class="tg-buh4">01-09-1973</td>
+      <td class="tg-buh4">R. T. College Ghatkopar</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90453</td>
+      <td class="tg-0lax">Desai Omesh Surendrakumar</td>
+      <td class="tg-0lax">Ahsok J. Desai,10-New R. H. Colony,Aurangabad.431001</td>
+      <td class="tg-0lax">25-04-1974</td>
+      <td class="tg-0lax">Deogiri College, Aurangabad</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90454</td>
+      <td class="tg-buh4">Vernekar Sharad Ramdas</td>
+      <td class="tg-buh4">Vernekar R. NB-6/10,Utkarsh Nagar, Gudilal, Hadpsar, above Ridhm House, 411028</td>
+      <td class="tg-buh4">29-11-1972</td>
+      <td class="tg-buh4">Modern College, Shivaji Nagar,Pune</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90455</td>
+      <td class="tg-0lax">Phadake Yogesh&nbsp;&nbsp;Chandrakant</td>
+      <td class="tg-0lax">Phadake C. G2164/2/65, Parvati Rd., Sadashiv Peth,Pune.411030</td>
+      <td class="tg-0lax">17-11-1972</td>
+      <td class="tg-0lax">M.E.S Abasaheb Garware College,Pune 411004</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90456</td>
+      <td class="tg-buh4">Pandit Renu Subhash</td>
+      <td class="tg-buh4">Pandit S. P2-B, Prashant Apt, behind SNDT College,Amar Society, Erandana, Pune 411004</td>
+      <td class="tg-buh4">14-08-1973</td>
+      <td class="tg-buh4">M. J. Jr. College, Jalgaon</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90457</td>
+      <td class="tg-0lax">Gokhale Rajas Mukund</td>
+      <td class="tg-0lax">Gokhale M. S20/Shanivar Peth, Gokhale Wada, Pune411030</td>
+      <td class="tg-0lax">20-08-1972</td>
+      <td class="tg-0lax">S. P. College, Pune</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90458</td>
+      <td class="tg-buh4">Chatterjee Priyonath Manindranath</td>
+      <td class="tg-buh4">Chatterjee M.S-2, Sata Deep CHS., Kunal Rd,DeepBangla Chowk, Model Colony,Pune 411016</td>
+      <td class="tg-buh4">05-05-1972</td>
+      <td class="tg-buh4">Fergusson College, Pune</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90459</td>
+      <td class="tg-0lax">Chaudhari Pravin Kantiprasad</td>
+      <td class="tg-0lax">Chaudhari K.R55/53, Madhuban, Sarda Nagar,Deopur, Dhule. 424005</td>
+      <td class="tg-0lax">20-02-1973</td>
+      <td class="tg-0lax">Jai Hind Jr. College, Deopur</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90460</td>
+      <td class="tg-buh4">Ramteke Yogesh Rambahu</td>
+      <td class="tg-buh4">Ramteke R. SC/o D. K Bansod, 'A' Nagar,Limpus Club, Bunglow No.D-307,40 Blocks, Bhusawal.</td>
+      <td class="tg-buh4">19-05-1973</td>
+      <td class="tg-buh4">D.L.Hindi Jr. College, Bhusawal</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90461</td>
+      <td class="tg-0lax">Premsagar Archana Shankar</td>
+      <td class="tg-0lax">S.K. Jogi Plot No. 8, Block no. 2, Mohadi Rd., Shirsoli Naka, adarsh Nagar, jalgoan - 425 001.</td>
+      <td class="tg-0lax">01-04-1973</td>
+      <td class="tg-0lax">N.W.M. Vidyalaya &amp; Junior College, Jalgoan.</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90462</td>
+      <td class="tg-buh4">Ingale Nitin Janardan</td>
+      <td class="tg-buh4">Ingale J. P. Rly. Quarter RB II, REDS 1 (B), Near Bldg no. 1141, Limpus Club, Bhusawal, 425 201.</td>
+      <td class="tg-buh4">14-03-1973</td>
+      <td class="tg-buh4">M.S. Board of Sect. And Hsg. Sec. Edu. Pune - 411 010.</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90463</td>
+      <td class="tg-0lax">Deshmukh Sampada Shivaji</td>
+      <td class="tg-0lax">Deshmukh S. A. Plot 65, Sector 21, Yamuna Nagar, Niggdi Pune - 411 044.</td>
+      <td class="tg-0lax">12-11-1972</td>
+      <td class="tg-0lax">S.P. College</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90464</td>
+      <td class="tg-buh4">Sharma Pritesh Atulesh</td>
+      <td class="tg-buh4">A.K. SharmaB - 2/6, New Friends Society, Vanaz Paud Rd, Kotharud, Pune - 411 029.</td>
+      <td class="tg-buh4">09-06-1973</td>
+      <td class="tg-buh4">S.P. College</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90465</td>
+      <td class="tg-0lax">Muthe Rashmi Maruti</td>
+      <td class="tg-0lax">M.L. MutheC/o M.L.Muthe, 3, Vidyut co-op Housing Society, Shivaji Nagar, Oune rd, Nasik 4, 422 006.</td>
+      <td class="tg-0lax">10-01-1973</td>
+      <td class="tg-0lax">Arts , Commerce &amp; Science, Junior College, Nasik Rd.</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90466</td>
+      <td class="tg-buh4">Vanmali Rajeev Sadanand</td>
+      <td class="tg-buh4">S.S. Vanmali, Avdhut Diwanman Rd, Manichpus taluka, Vasa, Dist - Thane 401 202.</td>
+      <td class="tg-buh4">07-11-1972</td>
+      <td class="tg-buh4">E.S. Andrades College of Science, Vasai</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90467</td>
+      <td class="tg-0lax">Khanzode Prakash Laxman</td>
+      <td class="tg-0lax">Khanzode L. B.N -33/ L- 68/0/4, Sahyandri Nagar, New Cidco, Nasik, 422 009.</td>
+      <td class="tg-0lax">04-04-1972</td>
+      <td class="tg-0lax">Govt. Polytech NC, Jalgoan.</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90468</td>
+      <td class="tg-buh4">Zemse Shekhar Chintaman</td>
+      <td class="tg-buh4">Zemse C.B.D.P. Lonar wada, Dr. Ambedkar rd, Kalyan, 421 301, Dist - Thane</td>
+      <td class="tg-buh4">30-10-1971</td>
+      <td class="tg-buh4">K.J. Somaiya Polytechnic</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90469</td>
+      <td class="tg-0lax">Dashpute Laxmikant Murlidhar</td>
+      <td class="tg-0lax">M.M. DashputeSanjay Nagar Pimpalner, tal - Sakri, Dist - Dhule, 424 306.</td>
+      <td class="tg-0lax">26-12-1971</td>
+      <td class="tg-0lax">Govt. Polytech NC, Jalgoan.</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90470</td>
+      <td class="tg-buh4">Gandhi Murtaza Fakhruddhin</td>
+      <td class="tg-buh4">Gandhi F.S.Room No. 5, 1st floor, 10,ist cooper street, Bombay 400 003.</td>
+      <td class="tg-buh4">06-11-1990</td>
+      <td class="tg-buh4">V.J.T.I. Matunga, Bombay - 400 019.</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90471</td>
+      <td class="tg-0lax">Bhandari Anjaneyulu Bhadraiah</td>
+      <td class="tg-0lax">Vhandari B. V.Amin Chawl, 8/13, Room No. 8, Sayani rd, Khedgally, Dadar, B'bay - 400 025.</td>
+      <td class="tg-0lax">16-01-1970</td>
+      <td class="tg-0lax">Govt. Polytech, Warangal A.P. 506 007.</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90472</td>
+      <td class="tg-buh4">Mapari Husenmiya Abubakar</td>
+      <td class="tg-buh4">Mapari A.A.At/post - Devdhe, Taluka - Lanja, Dist - Ratnagiri, Pin 416 712.</td>
+      <td class="tg-buh4">01-06-1971</td>
+      <td class="tg-buh4">Govt. Polytech NC, Ratnagiri.</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90473</td>
+      <td class="tg-0lax">Mohnalkar Vidyadhar Sudhakar</td>
+      <td class="tg-0lax">Mohnalkar S.D.2/35,36, Ihrahim Kasam Bldg, Arthar Rd, Lalbaugh, Bombay 400 012.</td>
+      <td class="tg-0lax">21-12-1971</td>
+      <td class="tg-0lax">M.H.Saboo Siddik Polytechnic</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90474</td>
+      <td class="tg-buh4">Sura Tejas Vinod</td>
+      <td class="tg-buh4">Sura V.S.3A, Takshashila Apt, 50, Tagore Rd, Santacruze (W), Bombay - 400 054.</td>
+      <td class="tg-buh4">09-11-1969</td>
+      <td class="tg-buh4">V.J.T.I. Matunga, Bombay - 400 019.</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90475</td>
+      <td class="tg-0lax">Asawa Jugalkishor Rajgopal</td>
+      <td class="tg-0lax">Asawa R.B.190/1K, Samrat Chowk, Budhwar Peth, Solapur - 2.</td>
+      <td class="tg-0lax">18-09-1969</td>
+      <td class="tg-0lax">S.E.S. Polytechnic, Solapur.</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90476</td>
+      <td class="tg-buh4">Deshpande Manoj Mukundrao</td>
+      <td class="tg-buh4">Deshpande M. N.H.No. 1263, North Kasha Deshpande Galli, Solapur - 413 007.</td>
+      <td class="tg-buh4">31-07-1971</td>
+      <td class="tg-buh4">S.E.S. Polytechnic, Solapur.</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">90477</td>
+      <td class="tg-0lax">Borwankar Subodh Shrikant</td>
+      <td class="tg-0lax">Borwankar S. R.126 D, Jaganath Chawl, Fanaswadi, Girgoan, Bombay - 400 002.</td>
+      <td class="tg-0lax">28-12-1971</td>
+      <td class="tg-0lax">W.C. Of Engg., Sangli</td>
+    </tr>
+    <tr>
+      <td class="tg-buh4">90478</td>
+      <td class="tg-buh4">Kulkarni Rahul Chandrakant</td>
+      <td class="tg-buh4">Kulkarni C.G.B.105, Bhagavati Krupa, Ram Nagar, rajaji Path, Dombivali (E), 421 201.</td>
+      <td class="tg-buh4">04-07-1972</td>
+      <td class="tg-buh4">W.C. Of Engg., Sangli</td>
+    </tr>
+  </tbody>
+  </table></div>
+  <script charset="utf-8">var TGSort=window.TGSort||function(n){"use strict";function r(n){return n?n.length:0}function t(n,t,e,o=0){for(e=r(n);o<e;++o)t(n[o],o)}function e(n){return n.split("").reverse().join("")}function o(n){var e=n[0];return t(n,function(n){for(;!n.startsWith(e);)e=e.substring(0,r(e)-1)}),r(e)}function u(n,r,e=[]){return t(n,function(n){r(n)&&e.push(n)}),e}var a=parseFloat;function i(n,r){return function(t){var e="";return t.replace(n,function(n,t,o){return e=t.replace(r,"")+"."+(o||"").substring(1)}),a(e)}}var s=i(/^(?:\s*)([+-]?(?:\d+)(?:,\d{3})*)(\.\d*)?$/g,/,/g),c=i(/^(?:\s*)([+-]?(?:\d+)(?:\.\d{3})*)(,\d*)?$/g,/\./g);function f(n){var t=a(n);return!isNaN(t)&&r(""+t)+1>=r(n)?t:NaN}function d(n){var e=[],o=n;return t([f,s,c],function(u){var a=[],i=[];t(n,function(n,r){r=u(n),a.push(r),r||i.push(n)}),r(i)<r(o)&&(o=i,e=a)}),r(u(o,function(n){return n==o[0]}))==r(o)?e:[]}function v(n){if("TABLE"==n.nodeName){for(var a=function(r){var e,o,u=[],a=[];return function n(r,e){e(r),t(r.childNodes,function(r){n(r,e)})}(n,function(n){"TR"==(o=n.nodeName)?(e=[],u.push(e),a.push(n)):"TD"!=o&&"TH"!=o||e.push(n)}),[u,a]}(),i=a[0],s=a[1],c=r(i),f=c>1&&r(i[0])<r(i[1])?1:0,v=f+1,p=i[f],h=r(p),l=[],g=[],N=[],m=v;m<c;++m){for(var T=0;T<h;++T){r(g)<h&&g.push([]);var C=i[m][T],L=C.textContent||C.innerText||"";g[T].push(L.trim())}N.push(m-v)}t(p,function(n,t){l[t]=0;var a=n.classList;a.add("tg-sort-header"),n.addEventListener("click",function(){var n=l[t];!function(){for(var n=0;n<h;++n){var r=p[n].classList;r.remove("tg-sort-asc"),r.remove("tg-sort-desc"),l[n]=0}}(),(n=1==n?-1:+!n)&&a.add(n>0?"tg-sort-asc":"tg-sort-desc"),l[t]=n;var i,f=g[t],m=function(r,t){return n*f[r].localeCompare(f[t])||n*(r-t)},T=function(n){var t=d(n);if(!r(t)){var u=o(n),a=o(n.map(e));t=d(n.map(function(n){return n.substring(u,r(n)-a)}))}return t}(f);(r(T)||r(T=r(u(i=f.map(Date.parse),isNaN))?[]:i))&&(m=function(r,t){var e=T[r],o=T[t],u=isNaN(e),a=isNaN(o);return u&&a?0:u?-n:a?n:e>o?n:e<o?-n:n*(r-t)});var C,L=N.slice();L.sort(m);for(var E=v;E<c;++E)(C=s[E].parentNode).removeChild(s[E]);for(E=v;E<c;++E)C.appendChild(s[v+L[E-v]])})})}}n.addEventListener("DOMContentLoaded",function(){for(var t=n.getElementsByClassName("tg"),e=0;e<r(t);++e)try{v(t[e])}catch(n){}})}(document)</script>
